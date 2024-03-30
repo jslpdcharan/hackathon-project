@@ -19,6 +19,7 @@ const Header = () => {
                 <Link to="/events">EVENTS</Link>
                 <Link to="/clubs">CLUBS</Link>
                 <Link to="/alumni">ALUMNI</Link>
+                <Link to="/admin">ADMIN</Link>
             </nav>
         </header>
     );
