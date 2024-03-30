@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+    position: sticky; /* Stick to the top on scroll */
+    top: 0;
+    z-index: 10; /* Ensure navbar stays above other elements */
+    padding: 10px 20px; /* Adjust padding */
+    background-image: url('images/pete.jpg'); /* Add your background image path here */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-size: cover; /* Resize image to cover the navbar */
+    background-position: center; /* Center the image horizontally and vertically */
+    opacity: 0.2;
+
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items horizontally */
+
+}
+
+.navbar-logo {
+    color: #fff; /* White text color */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    height: 250px;
+    width: 250px
+
+
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 10px; /* Add some margin between menu items */
+}
+
+.nav-links {
+    color: orangered; /* Orangered text color */
+    font-size: 1rem; /* Adjust font size as needed */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Add some padding for hover effect */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.nav-links:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
