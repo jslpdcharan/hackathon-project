@@ -1,0 +1,46 @@
+.footer {
+    background-color: #444; /* Footer's background color */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Padding for the top and bottom */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    color: #fe6f00; /* Adjusted color */
+}
+
+.footer-section address {
+    margin-bottom: 5px;
+}
+
+.contact-link {
+    color: #fe6f00; /* Telephone and Contact Us link color */
+    text-decoration: none; /* Optional: Removes underline from links */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Optional: Underline on hover */
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px; /* Set the size of your social media icons */
+    height: 24px;
+}
+
+/* Additional responsive design styles as necessary */

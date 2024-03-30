@@ -1,0 +1,77 @@
+/* AboutUs.css */
+
+.container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    background-color: #fe5c00cc;
+    color: #ffffff;
+    padding: 0px; /* Reduce the padding */
+    font-size: 16px; /* Adjust the font size */
+}/* AboutUs.css */
+
+.container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    background-color: #fe5c00cc;
+    color: #ffffff;
+    padding: 0px; /* Reduce the padding */
+    font-size: 16px; /* Adjust the font size */
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content blocks horizontally */
+}
+
+.content-block {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space evenly */
+    width: 100%; /* Set width to take full container width */
+}
+
+.description {
+    flex: 1;
+    padding-right: 20px; /* Add some padding if desired */
+    text-align: left; /* Align text to the left */
+    padding : 30px;
+}
+
+img {
+    flex: 1;
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Add additional styles for h2, p, and any other elements as needed */
+
+
+/* Add additional styles for h2, p, and any other elements as needed */
