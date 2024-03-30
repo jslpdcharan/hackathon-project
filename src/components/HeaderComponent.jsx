@@ -1,20 +1,24 @@
 import React from 'react';
-import '../styles/header.css'; // Import the CSS file for the header
-import osuLogo from '../images/primary-brand.png'; // Make sure to import the OSU logo
+import { Link } from 'react-router-dom';
+import '../styles/header.css';
+import osuLogo from '../images/primary-brand.png';
 
 const Header = () => {
     return (
         <header className="header">
             <div className="header-logo-container">
-                <img src={osuLogo} alt="OSU Logo" className="header-logo" />
+                {/* Link wraps the image without additional styling */}
+                <Link to="/home" style={{ display: 'inline-block', lineHeight: 0 }}>
+                    <img src={osuLogo} alt="OSU Logo" className="header-logo" />
+                </Link>
                 <span className="header-text">Computer Science <br/>Graduate Student Association</span>
             </div>
             <nav className="header-nav">
-                <a href="/about-us">ABOUT US</a>
-                <a href="/committee">COMMITTEE</a>
-                <a href="/events">EVENTS</a>
-                <a href="/clubs">CLUBS</a>
-                <a href="/alumni">ALUMNI</a>
+                <Link to="/about">ABOUT US</Link>
+                <Link to="/committee">COMMITTEE</Link>
+                <Link to="/events">EVENTS</Link>
+                <Link to="/clubs">CLUBS</Link>
+                <Link to="/alumni">ALUMNI</Link>
             </nav>
         </header>
     );
