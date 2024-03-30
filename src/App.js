@@ -1,30 +1,26 @@
-import Navbar from "./Navbar"
-import Home from "./Home"
-import About from "./About"
-import Committee from "./Committee"
-import Events from "./Events"
-import Clubs from "./Clubs"
-import Alumni from "./Alumni"
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/HeaderComponent'; // Import your Header component
+import AboutUs from "./components/AboutUsComponent";
+import Home from "./components/HomeComponent";
+import Footer from "./components/FooterComponent";
+// Import other components as necessary
 
-import { Route, Routes } from "react-router-dom"
-
-
-function App() {
-  return (
-      <>
-        <Navbar />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Committee" element={<Committee />} />
-            <Route path="/Events" element={<Events />} />
-            <Route path="/Clubs" element={<Clubs />} />
-            <Route path="/Alumni" element={<Alumni />} />
-          </Routes>
-        </div>
-      </>
-  )
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Header /> {/* Place Header outside of Routes to display it consistently */}
+            <Routes>
+                <Route index element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<AboutUs />} />
+                {/*<Route path="/committee" element={<YourCommitteeComponent />} />*/}
+                {/*<Route path="/events" element={<YourEventsComponent />} />*/}
+                {/*<Route path="/clubs" element={<YourClubsComponent />} />*/}
+                {/*<Route path="/alumni" element={<YourAlumniComponent />} />*/}
+                {/* Define routes for other components */}
+            </Routes>
+            <Footer/>
+        </BrowserRouter>
+    );
 }
-
-export default App
