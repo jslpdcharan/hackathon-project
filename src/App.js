@@ -5,6 +5,8 @@ import AboutUs from "./components/AboutUsComponent";
 import Home from "./components/HomeComponent";
 import Footer from "./components/FooterComponent";
 import Admin from "./pages/AdminLogin";
+import Alumni from "./pages/Alumni";
+import Events from "./pages/Events";
 // Import other components as necessary
 
 export default function App() {
@@ -16,9 +18,9 @@ export default function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<AboutUs />} />
                 {/*<Route path="/committee" element={<YourCommitteeComponent />} />*/}
-                {/*<Route path="/events" element={<YourEventsComponent />} />*/}
+                <Route path="/events" element={<Events />} />
                 {/*<Route path="/clubs" element={<YourClubsComponent />} />*/}
-                {/*<Route path="/alumni" element={<YourAlumniComponent />} />*/}
+                <Route path="/alumni" element={<Alumni />} />
                 <Route path="/admin" element={<Admin />} />
                 {/* Define routes for other components */}
             </Routes>
