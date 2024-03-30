@@ -4,6 +4,7 @@ import Header from './components/HeaderComponent'; // Import your Header compone
 import AboutUs from "./components/AboutUsComponent";
 import Home from "./components/HomeComponent";
 import Footer from "./components/FooterComponent";
+import Admin from "./pages/AdminLogin";
 // Import other components as necessary
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
                 {/*<Route path="/events" element={<YourEventsComponent />} />*/}
                 {/*<Route path="/clubs" element={<YourClubsComponent />} />*/}
                 {/*<Route path="/alumni" element={<YourAlumniComponent />} />*/}
+                <Route path="/admin" element={<Admin />} />
                 {/* Define routes for other components */}
             </Routes>
             <Footer/>
