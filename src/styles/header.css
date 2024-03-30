@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../images/pete_eyes.jpeg'); /* Increase the transparency */
+    background-size: cover; /* Cover the entire area of the header */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Adjust text color for better visibility if needed */
+    width: 100%; /* Full width */
+    height: 120px; /* Set the height you prefer */
+    /* Other styles */
+}
+
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 50px; /* Adjust the size as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 24px; /* Adjust the size as needed */
+    margin-right: 20px; /* Space between text and nav items */
+    color: #111827eb; /* OSU orange color for text */
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center; /* Center the navigation items */
+}
+
+.header-nav a {
+    color: #000; /* Black color text for nav items */
+    text-decoration: none;
+    margin: 0 15px; /* Spacing between nav items */
+    font-weight: bold; /* If the text is bold in the design */
+    text-transform: uppercase; /* If the text is uppercase in the design */
+    font-size: 20px;
+}
+
+.header-nav a:hover {
+    color: #FF6600; /* Orange color on hover */
+}
+
+/* Additional responsive design styles as necessary */
