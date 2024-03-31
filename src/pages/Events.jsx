@@ -71,7 +71,7 @@ const EventPage = () => {
                             {
                                 (eventsByDate[date].map((event, index) => (
                                     <div key={index} className="card mb-4">
-                                    <div className="card-header text-white" style={{backgroundColor: '#ff4500'}}>
+                                    <div className="card-header text-white" style={{backgroundColor: 'rgb(255 69 0 / 74%)'}}>
                                         {event.e_name}
                                     </div>
                                     <div className="card-body">
