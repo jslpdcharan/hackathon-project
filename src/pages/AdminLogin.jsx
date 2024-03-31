@@ -109,13 +109,13 @@ function AdminLogin() {
                             />
                         </div>
                         <br></br>
-                        <button type="submit" className="btn btn-primary w-100">Login</button>
+                        <button type="submit" className="btn btn-primary w-100" style={{backgroundColor: "orange",color:"black"}}>Login</button>
                     </form>
                 </div>
             ) : (
                 <div className="container mt-5">
                     {isUpdating ? (
-                        <div className="container">
+                        <div className="container" style={{backgroundColor: "ghostwhite", padding: "20px", borderRadius: "10px", maxWidth: "400px"}}>
                             <h2>Update Record</h2>
                             <form onSubmit={updateRecord}>
                                 <div className="form-group">
@@ -136,10 +136,19 @@ function AdminLogin() {
                                            onChange={(e) => setUpdateData({...updateData, level: e.target.value})}
                                            required/>
                                 </div>
-                                <button type="submit" className="btn btn-success">Update</button>
-                                <button onClick={() => setIsUpdating(false)} className="btn btn-secondary ml-2">Cancel
-                                </button>
+                                <br></br>
+                                    <button
+                                        type="submit"
+                                        className="btn btn-success"
+                                        style={{backgroundColor: "orange", color: "black"}}
+                                    >
+                                        Update
+                                    </button>
+                                    <button onClick={() => setIsUpdating(false)} className="btn btn-secondary">
+                                        Cancel
+                                    </button>
                             </form>
+                            <br></br>
                         </div>
                     ) : (
                         <>
@@ -162,7 +171,7 @@ function AdminLogin() {
                                         <td>{record.m_level}</td>
                                         <td>{record.m_role}</td>
                                         <td>
-                                            <button className="btn btn-primary"
+                                            <button className="btn btn-primary" style={{backgroundColor: "orange",color:"black"}}
                                                     onClick={() => showUpdateForm(record)}>Update
                                             </button>
                                         </td>
@@ -170,7 +179,7 @@ function AdminLogin() {
                                 ))}
                                 </tbody>
                             </table>
-                            <button className="btn btn-secondary" onClick={home_page}>Logout</button>
+                            <button className="btn btn-secondary" style={{backgroundColor: "orange",color:"black"}} onClick={home_page}>Logout</button>
                         </>
                     )}
                 </div>
