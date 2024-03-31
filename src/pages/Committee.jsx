@@ -52,14 +52,18 @@ const CommitteeMembers = () => {
                         <img src={image} alt={member.m_name} className="img-fluid" style={{ maxWidth: '100px' }}/>
                     </div>
                     <div className="col-lg-4 col-md-5 col-sm-8 col-12">
-                        <h4 style={{ color: 'orange' }}>{member.m_role}</h4> {/* Role in orange */}
+                        <h4 style={{color: 'orange'}}>{member.m_role}</h4> {/* Role in orange */}
                         <p><strong>Name:</strong> {member.m_name}</p>
-                        <p><strong>Email:</strong> {member.m_email}</p>
-                        <p><strong>Role:</strong> {member.m_role}</p>
+                        <p>
+                            <strong>Email:</strong>
+                            <a href={`mailto:${member.m_email}`} style={{marginLeft: '5px',color:'black'}}>
+                                {member.m_email}
+                            </a>
+                        </p>                        <p><strong>Role:</strong> {member.m_role}</p>
                         <p><strong>Level:</strong> {member.m_level}</p>
                     </div>
                     <div className="col-lg-6 col-md-4 col-sm-12 col-12 text-start">
-                        <h4 style={{ color: 'orange' }}>Responsibilities</h4> {/* Responsibilities header in orange */}
+                        <h4 style={{color: 'orange'}}>Responsibilities</h4> {/* Responsibilities header in orange */}
                         {memberResponsibilities[member.m_role] && (
                             <ul>
                                 {memberResponsibilities[member.m_role].map((responsibility, index) => (
