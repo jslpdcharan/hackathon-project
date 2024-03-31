@@ -24,10 +24,14 @@ const Footer = () => {
                 <div className="footer-section">
                     <h2>Follow Us</h2>
                     <div className="social-icons">
-                        <a href="https://www.facebook.com/cs.okstate/"><img src={facebookLogo} alt="Facebook"/></a>
-                        <a href="https://twitter.com/osu_cs"><img src={twitterLogo} alt="Twitter"/></a>
-                        <a href="https://www.instagram.com/okstate_cs/"><img src={instagramLogo} alt="Instagram"/></a>
-                        <a href="https://www.linkedin.com/groups/8281145/"><img src={linkedinLogo} alt="LinkedIn"/></a>
+                        <a href="https://www.facebook.com/cs.okstate/" target="_blank" rel="noopener noreferrer"><img
+                            src={facebookLogo} alt="Facebook"/></a>
+                        <a href="https://twitter.com/osu_cs" target="_blank" rel="noopener noreferrer"><img
+                            src={twitterLogo} alt="Twitter"/></a>
+                        <a href="https://www.instagram.com/okstate_cs/" target="_blank" rel="noopener noreferrer"><img
+                            src={instagramLogo} alt="Instagram"/></a>
+                        <a href="https://www.linkedin.com/groups/8281145/" target="_blank"
+                           rel="noopener noreferrer"><img src={linkedinLogo} alt="LinkedIn"/></a>
                     </div>
                 </div>
             </div>

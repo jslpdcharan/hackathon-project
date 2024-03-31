@@ -7,6 +7,7 @@ import Footer from "./components/FooterComponent";
 import Admin from "./pages/AdminLogin";
 import Alumni from "./pages/Alumni";
 import Events from "./pages/Events";
+import Clubs from "./components/ClubPage";
 // Import other components as necessary
 
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
                 <Route path="/about" element={<AboutUs />} />
                 {/*<Route path="/committee" element={<YourCommitteeComponent />} />*/}
                 <Route path="/events" element={<Events />} />
-                {/*<Route path="/clubs" element={<YourClubsComponent />} />*/}
+                <Route path="/clubs" element={<Clubs />} />
                 <Route path="/alumni" element={<Alumni />} />
                 <Route path="/admin" element={<Admin />} />
                 {/* Define routes for other components */}

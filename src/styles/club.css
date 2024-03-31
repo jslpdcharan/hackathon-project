@@ -1,0 +1,52 @@
+.clubs-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cards will now be a minimum of 250px and will fit into the container */
+    grid-gap: 20px; /* Space between the cards */
+    padding: 20px; /* Padding around the grid */
+    /* Responsive design adjustment */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Full width columns on smaller screens */
+    }
+}
+.club-name{
+    padding:10px;
+}
+.club-content {
+    width: 50%; /* Content takes up the remaining half */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.club-card {
+    display: flex;
+    flex-direction: column; /* Stack image and description vertically */
+    align-items: center; /* Center-align items for aesthetics */
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #e1e1e1; /* Optional border for the card */
+    padding: 10px; /* Padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+.club-image-container, .club-info-container {
+    flex: 1; /* Each container will take up half the space of the card */
+}
+.club-image {
+    width: 100%; /* Adjust this to set your desired size, e.g., 80% for smaller image */
+    object-fit: cover; /* Ensures the image covers the assigned area */
+    aspect-ratio: 1 / 1; /* Makes the image square */
+}
+
+.club-description {
+    text-align: center; /* Center the text for the description */
+    padding: 10px; /* Padding around the text */
+}
+.club-text {
+    background-color: #ff7900ed; /* Sets the background to orange */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text horizontally */
+    padding: 10px 0; /* Adds padding above and below the text */
+    margin: 0; /* Removes default margin around the <h1> */
+    width: 100%; /* Ensures the background color spans the full width of the page */
+}
+
+/* Rest of your styles */
