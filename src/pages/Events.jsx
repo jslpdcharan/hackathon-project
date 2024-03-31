@@ -46,7 +46,7 @@ const EventPage = () => {
                 minHeight: '100vh',
             }}>
                 <div className="container mt-4">
-                    <h1 className="mb-4" style={{color: '#ff4500'}}>Events</h1>
+                    <h1 className="mb-4" style={{color: 'rgb(255 105 0)'}}>Events</h1>
                     <input
                         type="date"
                         value={selectedDate}
@@ -54,7 +54,7 @@ const EventPage = () => {
                         className="form-control mb-4"
                     />
                     {noEvents ? (
-                            <div className="text-center" style={{ backgroundColor: '#ff4500', color: 'white', padding: '10px' }}>
+                            <div className="text-center" style={{ backgroundColor: 'rgb(255 102 0 / 81%)', color: 'white', padding: '10px' }}>
                                 No Events Scheduled
                             </div>
                         ) :(

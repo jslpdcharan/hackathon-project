@@ -41,21 +41,33 @@ const AlumniPage = () => {
                 minHeight: '100vh',
             }}>
                 <div className="container mt-4">
-                    <h2 className="mb-4" style={{ color: 'rgb(228 93 17)' }}>Alumni Members by Year</h2>
+                    <h1 style={{
+                        backgroundColor: '#ff7900ed', /* Sets the background to orange */
+                        color: 'white', /* Sets the text color to white */
+                        alignContent: 'center', /* Centers the text horizontally */
+                        padding: '10px 0', /* Adds padding above and below the text */
+                        margin: '0', /* Removes default margin around the <h1> */
+                        width: '100%', /* Ensures the background color spans the full width of the page */
+                    }}>Alumni Members By Year</h1>
                     {Object.keys(alumniByYear).sort().map(year => (
                         <div key={year}>
                             <h3 className="my-3">{year}</h3>
                             <div className="row">
                                 {alumniByYear[year].map((alumnus, index) => (
                                     <div key={index} className="col-lg-3 col-md-6 mb-4">
-                                        <div className="card h-100" onClick={() => window.open('https://www.linkedin.com/school/oklahoma-state-university/', '_blank')}>
-                                            <div className="card-body" style={{ cursor: 'pointer' }}>
+                                        <div className="card h-100"
+                                             onClick={() => window.open('https://www.linkedin.com/school/oklahoma-state-university/', '_blank')}>
+                                            <div className="card-body" style={{cursor: 'pointer'}}>
                                                 <h5 className="card-title">
                                                     {alumnus.a_full_name}
                                                     <img
                                                         src={IconPath} // Your icon image path
                                                         alt="Icon"
-                                                        style={{ width: '20px', height: '20px', marginLeft:'10px' }} // Adjust size as needed
+                                                        style={{
+                                                            width: '20px',
+                                                            height: '20px',
+                                                            marginLeft: '10px'
+                                                        }} // Adjust size as needed
                                                     />
 
                                                 </h5>
