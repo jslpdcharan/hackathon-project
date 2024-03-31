@@ -10,7 +10,7 @@ const HomeComponent = () => {
                 <div className="container">
                     <img src={placeholderImage} alt="University Campus"/>
                     <div className="home-overlay">
-                        <h1>CONNECT. ACHIEVE. SUCCEED.</h1>
+                        <h1>LEARN. SHARE. GROW.</h1>
                     </div>
                 </div>
 
